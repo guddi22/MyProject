@@ -7,7 +7,7 @@ package se.kth.sda.vehicleinspection.controller;
 
 /**
  *
- * @author - Shubba , Payal , Vimala
+ * @author - Shubha , Payal , Vimala
  * This Garage class contains garage methods for Next Customer and 
  * open,close garage door.
  */

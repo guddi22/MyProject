@@ -7,11 +7,20 @@ package se.kth.sda.vehicleinspection.model;
 
 /**
  *
- * @author tmpuser-10227
+ * @author - Shubha , Payal , Vimala
+ * This is Payment Interface for Payment Transaction.
  */
 public interface Payment {
 
+    /**
+     * This method is used to PerformTransaction
+     * @return - Gives success or failed transaction in boolean format.
+     */
     public boolean performTransaction();
 
+    /**
+     * This is method to get the Payment Message
+     * @return - Gives Payment Message in String format.
+     */
     public String getPaymentMessage();
 }

@@ -7,14 +7,21 @@ package se.kth.sda.vehicleinspection.model;
 
 /**
  *
- * @author tmpuser-10227
+ * @author - Shubha , Payal , Vimala
  */
 public class Receipt {
     
+    /**
+     * This method is Constructor of Receipt class.
+     */
     public Receipt(){
         System.out.println(setStandardMessage());
     }
 
+    /**
+     * This method prints the standard message of both Payment and Inspection Receipt
+     * @return - Gives the message in String format to be Printed.
+     */
     public String setStandardMessage() {
         StringBuilder str = new StringBuilder();
         str.append("\n");

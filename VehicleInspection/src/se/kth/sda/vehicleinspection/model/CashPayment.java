@@ -5,15 +5,22 @@
  */
 package se.kth.sda.vehicleinspection.model;
 
-/**
- *
- * @author tmpuser-10227
- */
+    /**
+     *
+     * @author - Shubha , Payal , Vimala
+     *  This class CashPayment is used to deal with the Cash Transaction when Payment mode 
+     * is cash and implements Payment interface.
+     */
 public class CashPayment implements Payment {
 
     public Float amount;
     public Float paidAmount;
 
+    /**
+     * This method is Constructor of CashPayment class.
+     * @param amount - Amount of Inspection Cost 
+     * @param paidAmount - Amount paid by Customer
+     */
     public CashPayment(Float amount, Float paidAmount) {
         System.out.println("Cash payment started");
         this.amount = amount;
@@ -21,6 +28,10 @@ public class CashPayment implements Payment {
         calculateChange();
     }
 
+    /**
+     * This method is used to Calculate the Change.
+     * @return - Gives the change amount in Float format.
+     */
     public float calculateChange() {
         float changeAmt;
         changeAmt = paidAmount - amount;
@@ -30,6 +41,11 @@ public class CashPayment implements Payment {
         return changeAmt;
     }
 
+    /**
+     * This is Override method to Perform Payment Transaction
+     * @return - Give the information whether the Transaction was successful or 
+     *  not in boolean format.
+     */
     @Override
     public boolean performTransaction() {
         System.out.println("Doing Cash Transaction");
@@ -37,6 +53,10 @@ public class CashPayment implements Payment {
         return true;
     }
 
+    /**
+     * This is Override method to get the Payment Message
+     * @return - Gives the Payment message in String format.
+     */
     @Override
     public String getPaymentMessage() {
         return "Thanks for paying by cash: " + amount;

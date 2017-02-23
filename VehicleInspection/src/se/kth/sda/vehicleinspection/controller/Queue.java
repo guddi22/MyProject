@@ -6,7 +6,7 @@
 package se.kth.sda.vehicleinspection.controller;
 
 /**
- * @author - Shubba , Payal , Vimala
+ * @author - Shubha , Payal , Vimala
  * The Queue class contains the Queue number and the method for
  * incrementing next Queue number.
  * 

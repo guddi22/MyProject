@@ -7,7 +7,8 @@ package se.kth.sda.vehicleinspection.DTO;
 
 /**
  *
- * @author tmpuser-10227
+ * @author - Shubha , Payal , Vimala
+ *  This class VehicleDTO contain method get and set Vehicle Details.
  */
 public class VehicleDTO {
 
@@ -18,12 +19,12 @@ public class VehicleDTO {
     private String color;
 
     /**
-     *
-     * @param number
-     * @param type
-     * @param brand
-     * @param model
-     * @param color
+     * This method is VehicleDTO Constructor.
+     * @param number - Contains Vehicle number.
+     * @param type - Contains Vehicle type.
+     * @param brand - Contains vehicle Brand details.
+     * @param model - Contains vehicle model details.
+     * @param color - Contains vehicle color.
      */
     public VehicleDTO(String number, String type, String brand, String model, String color) {
         this.brand = brand;
@@ -34,16 +35,16 @@ public class VehicleDTO {
     }
 
     /**
-     *
-     * @return
+     * This method gets the Vehicle number.
+     * @return - Gives vehicle number.
      */
     public String getNumber() {
         return number;
     }
 
     /**
-     *
-     * @param number
+     * This method set value of Vehicle number.
+     * @param number - contains the vehicle number.
      */
     public void setNumber(String number) {
         if (number == null || number.isEmpty()) {
@@ -54,16 +55,16 @@ public class VehicleDTO {
     }
 
     /**
-     *
-     * @return
+     * This is the method to get Vehicle Type
+     * @return - Gives the vehicle type.
      */
     public String getType() {
         return type;
     }
 
     /**
-     *
-     * @param type
+     * This is method to Set the Vehicle Type
+     * @param type - contains the Vehicle type.
      */
     public void setType(String type) {
         if (type == null || type.isEmpty()) {
@@ -74,16 +75,16 @@ public class VehicleDTO {
     }
 
     /**
-     *
-     * @return
+     * This method is to get the Brand details of Vehicle
+     * @return - Gives the Vehicle Brand.
      */
     public String getBrand() {
         return brand;
     }
 
     /**
-     *
-     * @param brand
+     * This is the method to sets Vehicle Brand Detail.
+     * @param brand - Contains the vehicle brand information
      */
     public void setBrand(String brand) {
         if (brand == null || brand.isEmpty()) {
@@ -94,16 +95,16 @@ public class VehicleDTO {
     }
 
     /**
-     *
-     * @return
+     * This method gets the vehicle Model information.
+     * @return - Gives the vehicle Model.
      */
     public String getModel() {
         return model;
     }
 
     /**
-     *
-     * @param model
+     * This is method to set the vehicle model
+     * @param model - contains the vehicle model.
      */
     public void setModel(String model) {
         if (model == null || model.isEmpty()) {
@@ -114,16 +115,16 @@ public class VehicleDTO {
     }
 
     /**
-     *
-     * @return
+     * This method is to get the Vehicle color.
+     * @return - Gives the vehicle color information.
      */
     public String getColor() {
         return color;
     }
 
     /**
-     *
-     * @param color
+     * This is method to set the vehicle color
+     * @param color - Contains the vehicle color.
      */
     public void setColor(String color) {
         if (color == null || color.isEmpty()) {

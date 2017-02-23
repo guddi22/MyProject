@@ -13,13 +13,12 @@ import java.util.Map.Entry;
 import se.kth.sda.vehicleinspection.DTO.AddressDTO;
 
 /**
- *  
+ *  @author - Shubha , Payal , Vimala
+ *  This class VehicleRegistry contains methods to check Vehicle exist in Registry 
+ *  create new Vehicle Registry and Print Vehicle Registry.
  */
 public class VehicleRegistry {
 
-    /**
-     * 
-     */
     public static final HashMap<VehicleDTO, CustomerDTO> vehicleRegistry = new HashMap<>();
 
     /**

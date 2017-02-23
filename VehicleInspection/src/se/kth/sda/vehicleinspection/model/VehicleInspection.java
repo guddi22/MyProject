@@ -17,7 +17,7 @@ import se.kth.sda.vehicleinspection.integration.VehicleInspectionHistory;
 
 /**
  *
- * @author tmpuser-10227
+ * @author - Shubha , Payal , Vimala
  */
 public class VehicleInspection {
 
@@ -25,11 +25,20 @@ public class VehicleInspection {
     VehicleDTO vehicle;
     Random r = new Random();
 
+    /**
+     * This method is Constructor of VehicleInspection class
+     * @param vehicleDTO - Contains the Vehicle Details
+     * @param recommendedInspections - Contains the Recommended Inspection Details.
+     */
     public VehicleInspection(VehicleDTO vehicleDTO, RecommendedInspection recommendedInspections) {
         this.actualInspection = recommendedInspections;
         vehicle = vehicleDTO;
     }
 
+    /**
+     * This method is used to Perform Inspection.
+     * @return - Gives the Inspection performed result.
+     */
     public InspectionResult performInspection() {
         Map<InspectionParts, InspectionResults> inspectedParts = new HashMap<>();
         for (InspectionParts p : actualInspection.getRecommendedInspectionParts()) {
@@ -44,6 +53,11 @@ public class VehicleInspection {
         return finalResults;
     }
 
+    /**
+     * This method is used to add Inspection Result to the Vehicle History.
+     * @param vehicleDTO - Contains the Vehicle Details.
+     * @param inspectionResult - Contains the Inspection Performed Result.
+     */
     public void addInspectionResultToVehicleHistory(VehicleDTO vehicleDTO, InspectionResult inspectionResult) {
         SingleVehicleInspectionForSingleDateResults s = inspectionResult.addInspectionResultToVehicleHistory();
         SingleVehicleInspectionForAllDatesResults a = new SingleVehicleInspectionForAllDatesResults(s);

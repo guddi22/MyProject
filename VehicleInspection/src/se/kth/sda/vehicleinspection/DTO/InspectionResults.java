@@ -8,7 +8,7 @@ package se.kth.sda.vehicleinspection.DTO;
 /**
  * 
  * @author - Shubba , Payal , Vimala
- * The class contains Inspection Result enum
+ * The class contains Inspection Result enumerator
  */
 public enum InspectionResults {
 

@@ -9,7 +9,7 @@ import se.kth.sda.vehicleinspection.DTO.CreditCardDTO;
 
 /**
  *
- * @author - Shubba , Payal , Vimala
+ * @author - Shubha , Payal , Vimala
  * The class CreditCardAuthorization get the CardCredit Detail 
  * authorized by external system.
  */

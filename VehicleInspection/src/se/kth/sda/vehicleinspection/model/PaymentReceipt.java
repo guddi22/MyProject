@@ -10,7 +10,8 @@ import se.kth.sda.vehicleinspection.DTO.VehicleDTO;
 
 /**
  *
- * @author tmpuser-10227
+ * @author - Shubha , Payal , Vimala
+ * This class PaymentReceipt to Get and Print Payment Receipt.
  */
 public class PaymentReceipt extends Receipt {
 
@@ -19,12 +20,22 @@ public class PaymentReceipt extends Receipt {
     private CustomerDTO customerDTO;
     //private String paymentMessage;
 
+    /**
+     * This method is Constructor of PaymentReceipt class
+     * @param payment - Contains payment type
+     * @param vehicleDTO - Contains the Vehicle Details
+     * @param customerDTO - Contains the customer Details
+     */
     public PaymentReceipt(Payment payment, VehicleDTO vehicleDTO, CustomerDTO customerDTO) {
         this.payment = payment;
         this.customerDTO = customerDTO;
         this.vehicleDTO = vehicleDTO;
     }
 
+    /**
+     * This method is to generate the Payment Receipt
+     * @return - Give the Receipt in String format to be printed.
+     */
     public String generatePaymentReceipt() {
         StringBuilder str = new StringBuilder();
         str.append("\n");

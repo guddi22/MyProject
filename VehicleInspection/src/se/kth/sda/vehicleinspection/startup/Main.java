@@ -20,14 +20,14 @@ import se.kth.sda.vehicleinspection.model.RecommendedInspection;
 
 /**
  *
- * @author tmpuser-10227
+ * @author - Shubha , Payal , Vimala
  */
 public class Main {
 
     /**
-     *
-     * @param args
-     * @throws Exception
+     * This method is where the project starts its execution
+     * @param args - Contains the argument.
+     * @throws Exception - Exception handling to catch error calling methods
      */
     public static void main(String args[]) throws Exception{
         try{

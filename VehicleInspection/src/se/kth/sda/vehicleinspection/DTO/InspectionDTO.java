@@ -9,15 +9,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- *
- * @author tmpuser-10227
+ * This class InspectionDTO contains Inspection Parts and Cost
+ * @author - Shubha , Payal , Vimala
  */
 public class InspectionDTO {
 
     private Map<InspectionParts, Float> inspectionPartPrices = new HashMap<>();
 
     /**
-     *
+     * This is InspectionDTO Constructor.
      */
     public InspectionDTO() {
         inspectionPartPrices.put(InspectionParts.ENGINE, 100F);
@@ -41,9 +41,9 @@ public class InspectionDTO {
     }
 
     /**
-     *
-     * @param part
-     * @return
+     * This method is to get Inspection Cost.
+     * @param part - Contains the Inspection Part Details
+     * @return - Get the cost of Part in Float format.
      */
     public float getInspectionCost(InspectionParts part) {
         return inspectionPartPrices.get(part);

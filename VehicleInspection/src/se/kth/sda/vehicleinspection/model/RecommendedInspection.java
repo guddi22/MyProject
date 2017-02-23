@@ -13,20 +13,34 @@ import se.kth.sda.vehicleinspection.integration.VehicleInspectionHistory;
 
 /**
  *
- * @author tmpuser-10227
+ * @author - Shubha , Payal , Vimala
+ * This class RecommendedInspection gets Recommended Inspection Details.
  */
 public class RecommendedInspection {
 
     private Set<InspectionParts> recommendedInspectionParts;
 
+    /**
+     * This method is used to get the Recommended Inspection Parts
+     * @return - Gives Recommended Inspection Parts.
+     */
     public Set<InspectionParts> getRecommendedInspectionParts() {
         return recommendedInspectionParts;
     }
 
+    /**
+     * This method is Constructor of RecommendedInspection class.
+     * @param ip - Contains the Recommended Inspection Parts.
+     */
     public RecommendedInspection(Set<InspectionParts> ip) {
         recommendedInspectionParts = ip;
     }
 
+    /**
+     * This method is to get Recommended Inspection for given Vehicle Information
+     * @param vehicleDTO - Contains the Vehicle Details
+     * @return - Gives the Recommended Inspection Details.
+     */
     public static RecommendedInspection getRecommendedInspections(VehicleDTO vehicleDTO) {
         Set<InspectionParts> prevFailures
                 = VehicleInspectionHistory.getLatestInspectionResults(vehicleDTO).getFailedInspections();
@@ -36,6 +50,11 @@ public class RecommendedInspection {
         return new RecommendedInspection(prevFailures);
     }
 
+    /**
+     * This method creates Default Recommended Inspection Details if the Vehicle has
+     * no History of Inspection.
+     * @return - Gives the Default Recommended Inspection.
+     */
     public static RecommendedInspection createDefaultRecomendedInspections() {
         Set<InspectionParts> s = new HashSet<>();
         for (InspectionParts p : InspectionParts.values()) {
@@ -44,6 +63,9 @@ public class RecommendedInspection {
         return new RecommendedInspection(s);
     }
 
+    /**
+     * This method is used to print the Recommended Inspection Details
+     */
     public void print() {
         System.out.println("Recommended inspections for your vehicle:");
         for (InspectionParts p : recommendedInspectionParts) {
