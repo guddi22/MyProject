@@ -7,7 +7,8 @@ package se.kth.sda.vehicleinspection.DTO;
 
 /**
  *
- * @author tmpuser-10227
+ * @author - Shubha , Payal , Vimala
+ * This class CustomerDTO is Customer Details
  */
 public class CustomerDTO {
 
@@ -18,12 +19,12 @@ public class CustomerDTO {
     private String emailID;
 
     /**
-     *
-     * @param drivingLicense
-     * @param name
-     * @param address
-     * @param phone
-     * @param email
+     * This is Customer DTO Constructor
+     * @param drivingLicense - Customer driving license.
+     * @param name - Customer name
+     * @param address - Customer address which is type AddressDTO
+     * @param phone - Customer phone
+     * @param email - Customer email
      */
     public CustomerDTO(String drivingLicense, String name, AddressDTO address, String phone, String email) {
         this.drivingLicense = drivingLicense;
@@ -34,16 +35,16 @@ public class CustomerDTO {
     }
 
     /**
-     *
-     * @return
+     * This method is to get the Driving License
+     * @return - Driving license in String Format.
      */
     public String getDrivingLicense() {
         return drivingLicense;
     }
 
     /**
-     *
-     * @param drivingLicense
+     * This method is to set Driving License value
+     * @param drivingLicense - Contain driving License detail.
      */
     public void setDrivingLicense(String drivingLicense) {
         if (drivingLicense == null || drivingLicense.isEmpty()) {
@@ -54,16 +55,16 @@ public class CustomerDTO {
     }
 
     /**
-     *
-     * @return
+     * This method is to get Customer name.
+     * @return - Returns the Customer name in String Format.
      */
     public String getName() {
         return name;
     }
 
     /**
-     *
-     * @param name
+     * This is method is to set Customer Name
+     * @param name - Contains Customer name
      */
     public void setName(String name) {
         if (name == null || name.isEmpty()) {
@@ -74,32 +75,32 @@ public class CustomerDTO {
     }
 
     /**
-     *
-     * @return
+     * This method is to get Address Details.
+     * @return - get AddressDTO with Address Details.
      */
     public AddressDTO getAddress() {
         return address;
     }
 
     /**
-     *
-     * @param address
+     * This method is to set Address Details
+     * @param address - Contains Address details
      */
     public void setAddress(AddressDTO address) {
         this.address = address;
     }
 
     /**
-     *
-     * @return
+     * This method is to get Customer Phone number.
+     * @return - Gives Phone number in string format.
      */
     public String getPhone() {
         return phone;
     }
 
     /**
-     *
-     * @param phone
+     * This method set the Customer phone number
+     * @param phone - contains customer phone number
      */
     public void setPhone(String phone) {
         if (phone == null || phone.isEmpty() || !(isInteger(phone))) {
@@ -110,16 +111,16 @@ public class CustomerDTO {
     }
 
     /**
-     *
-     * @return
+     * This method gets Email ID of the Customer
+     * @return - Gives customer emailID
      */
     public String getEmailID() {
         return emailID;
     }
 
     /**
-     *
-     * @param emailID
+     * This method sets the Email ID of the Customer
+     * @param emailID - contains the emailID of customer.
      */
     public void setEmailID(String emailID) {
         if (emailID == null || emailID.isEmpty()) {
@@ -130,8 +131,8 @@ public class CustomerDTO {
     }
 
      /**
-     *
-     * @param s
+     * This method validates whether the given string is Integer.
+     * @param s - String containing the integer value.
      */
     private boolean isInteger(String s) {
         if (s.isEmpty()) {

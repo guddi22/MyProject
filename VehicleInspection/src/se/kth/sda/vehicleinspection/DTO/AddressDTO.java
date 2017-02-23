@@ -7,7 +7,7 @@ package se.kth.sda.vehicleinspection.DTO;
 
 /**
  *
- * @author - Shubba , Payal , Vimala
+ * @author - Shubha , Payal , Vimala
  * The class AddressDTO represent Detailed Address information .
  */
 public final class AddressDTO {
